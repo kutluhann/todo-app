@@ -94,7 +94,7 @@ export default {
 }
 .todo .todo-content span{
   width: 240px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   word-wrap: break-word;
 }
@@ -102,7 +102,7 @@ export default {
   margin-top: 2px;
 }
 .todo .todo-delete{
-  width: 110px;
+  width: 120px;
   text-align: center;
 }
 .todo .todo-delete a{
@@ -114,6 +114,7 @@ export default {
   font-weight: bold;
   border-radius: 4px;
   transition: all .2s ease;
+  font-size: 14px;
 }
 .todo .todo-delete a:hover{
   background-color: rgb(200, 0, 0);

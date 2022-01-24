@@ -19,27 +19,12 @@ export default {
       <UncompletedTodos/>
       <CompletedTodos/>
     </div>
-    <a href="https://github.com/kutluhann/todo-app" target="_blank" class="github-repo">
-      <img src="./assets/github.png" alt="github">
-      Github
-    </a>
   </div>
 </template>
 
 <style>
 *{
-  font-family: monospace;
-}
-html{
-  height: 100%;
-  overflow: hidden;
-}
-body{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+  font-family: "Roboto Mono";
 }
 input, button{
   outline: none;
@@ -47,7 +32,7 @@ input, button{
 .app{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: bet;
   flex-direction: column;
 }
 .todo-area{
@@ -55,31 +40,10 @@ input, button{
   justify-content: center;
   align-items: flex-start;
 }
-.app .github-repo{
-  position: absolute;
-  bottom: 0;
-  right: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-  color: white;
-  padding: 8px;
-  font-size: 15px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  transition: padding-bottom .5s;
-}
-.app .github-repo:hover{
-  padding-bottom: 16px; 
-}
-.app .github-repo:hover img{
-  transform: rotate(720deg);
-}
-.app .github-repo img{
-  width: 24px;
-  margin-right: 8px;
-  transition: transform .5s;
+@media screen and (max-width: 900px) {
+  .todo-area{
+    flex-direction: column;
+  }
 }
 /*Transitions*/
 .todo-enter-active,

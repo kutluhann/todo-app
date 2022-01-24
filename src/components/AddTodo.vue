@@ -26,8 +26,8 @@ export default {
     <h2>Add Todo</h2>
     <form action="" @submit.prevent="addTodo()">
       <div class="inputs">
-        <input v-model="todo.text" type="text" class="todo-text" placeholder="Type your Todo here..">  
-        <input v-model="todo.note" type="text" class="todo-note" placeholder="Type your additional notes here..">  
+        <input v-model="todo.text" type="text" class="todo-text" placeholder="Todo">  
+        <input v-model="todo.note" type="text" class="todo-note" placeholder="Notes">  
       </div>
       <button type="submit" class="add-todo-button">Add</button>
     </form>

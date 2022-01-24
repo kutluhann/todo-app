@@ -17,10 +17,10 @@ export default {
 
 <template>
   <div class="uncompleted-todos">
-    <h2>
+    <h3>
       Uncompleted Todos ({{getTodos.length > 0 ? getTodos.length : 'empty'}})
       <a v-if="getTodos.length > 0" @click.prevent="deleteAllTodos(false)" class="delete-all">Delete All</a>
-    </h2>
+    </h3>
     <transition-group tag="div" class="todo-list" name="todo" mode="out-in">
       <Todo v-for="todo in getTodos" :todo="todo" :key="todo.id"/>
     </transition-group>
@@ -32,10 +32,6 @@ export default {
   width: 420px;
   margin: 20px;
   position: relative;
-}
-.todo-list{
-  height: 320px;
-  overflow-y: auto;
 }
 .uncompleted-todos .delete-all{
   color: red;
